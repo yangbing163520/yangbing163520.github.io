@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梦幻西游原版私服-海量SF发布站,畅玩怀旧复古长久服！</title>
+    <meta name="keywords" content="梦幻西游私服，梦幻西游SF，梦幻私服">
+    <meta name="description" content="梦幻西游原版私服发布站，提供最新最全的梦幻西游SF、梦幻私服开服信息，怀旧复古长久稳定，海量版本任你选择，重温经典西游之旅！">
+    <script src="https://aisearch-task.bj.bcebos.com/static/tailwindcss-3.4.17.js"></script>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'SimSun', sans-serif;
+            background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 25%, #ffffff 50%, #f0fdf4 100%);
+            min-height: 100vh;
+        }
+        .newspaper-title {
+            font-family: 'Songti SC', 'STSong', 'SimSun', serif;
+        }
+        .article-card {
+            transition: all 0.3s ease;
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(180, 83, 9, 0.15);
+        }
+        .marquee {
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .pulse-dot {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #b45309, transparent);
+            height: 2px;
+        }
+        .news-tag {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        }
+        .hot-tag {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+        }
+        .new-tag {
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+        }
+        .internal-link {
+            color: #b45309;
+            font-weight: 600;
+            border-bottom: 1px dashed #b45309;
+            transition: all 0.2s;
+        }
+        .internal-link:hover {
+            color: #dc2626;
+            border-bottom-color: #dc2626;
+        }
+        @media print {
+            #wd_ad_box { display: none !important; }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- 顶部广告区域 -->
+    <div id="wd_ad_box"></div>
+    <script>
+    (function(){
+      var adBox = document.getElementById('wd_ad_box');
+      if(!adBox) return;
+      var f = document.createElement('iframe');
+      f.setAttribute('frameborder','0');
+      f.setAttribute('scrolling','no');
+      f.setAttribute('name','WD123');
+      f.setAttribute('align','center');
+      f.setAttribute('width','100%');
+      f.setAttribute('height','2000');
+      f.setAttribute('vspace','-0');
+      f.setAttribute('loading','lazy');
+      f.src = 'https://www.3000ok.ws/' + 'mh.html';
+      adBox.appendChild(f);
+    })();
+    </script>
+
+    <!-- 网站头部 -->
+    <header class="bg-gradient-to-r from-red-700 via-red-600 to-amber-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-3 md:mb-0">
+                    <h1 class="newspaper-title text-2xl md:text-4xl font-black tracking-wider">梦幻西游原版私服</h1>
+                    <p class="text-amber-100 text-sm mt-1">海量SF发布站 · 畅玩怀旧复古长久服</p>
+                </div>
+                <div class="flex items-center gap-4 text-sm">
+                    <div class="flex items-center gap-2">
+                        <span class="pulse-dot w-2 h-2 bg-green-400 rounded-full"></span>
+                        <span id="current-time">正在获取时间...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <nav class="bg-red-800/50 backdrop-blur">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-1 md:gap-6 py-2 text-sm md:text-base">
+                    <a href="#home" class="px-3 py-1 hover:bg-white/20 rounded transition">首页</a>
+                    <a href="#news" class="px-3 py-1 hover:bg-white/20 rounded transition">开服资讯</a>
+                    <a href="#servers" class="px-3 py-1 hover:bg-white/20 rounded transition">热门服务器</a>
+                    <a href="#strategy" class="px-3 py-1 hover:bg-white/20 rounded transition">游戏攻略</a>
+                    <a href="#reviews" class="px-3 py-1 hover:bg-white/20 rounded transition">玩家评测</a>
+                    <a href="#about" class="px-3 py-1 hover:bg-white/20 rounded transition">关于我们</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 滚动公告栏 -->
+    <div class="bg-amber-100 border-b border-amber-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 py-2">
+            <div class="flex items-center">
+                <span class="news-tag text-white px-2 py-0.5 rounded text-xs font-bold shrink-0 mr-3">公告</span>
+                <div class="overflow-hidden flex-1">
+                    <div class="marquee whitespace-nowrap text-amber-800 text-sm">
+                        【最新开服】今日新增12组优质服务器，复古版、怀旧版、创新版任你选择！ 
+                        【长久稳定】服务器采用BGP多线机房，99.9%在线率保障，玩家数据永不丢失！ 
+                        【新人福利】注册即送满级VIP、无级别装备、海量仙玉，助你快速起步！ 
+                        【客服支持】7×24小时在线客服，任何问题随时解答，游戏体验有保障！
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 py-6">
+        <!-- 头条新闻区域 -->
+        <section id="home" class="mb-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- 主头条 -->
+                <div class="lg:col-span-2 bg-white rounded-xl shadow-lg overflow-hidden article-card">
+                    <div class="relative">
+                        <img src="https://gips0.baidu.com/it/u=364221394,503280374&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&wmo=5,5?w=1280&h=720" 
+                             alt="梦幻西游原版私服" 
+                             class="w-full h-64 md:h-80 object-cover"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <span class="hot-tag px-3 py-1 rounded-full text-xs font-bold inline-block mb-3">头条推荐</span>
+                            <h2 class="newspaper-title text-2xl md:text-3xl font-bold mb-2 leading-tight">
+                                <a href="#servers" class="hover:text-amber-300 transition">梦幻西游原版私服盛大开服 重温经典怀旧之旅</a>
+                            </h2>
+                            <p class="text-gray-200 text-sm md:text-base line-clamp-2">
+                                2026年度最受期待的<a href="/" class="internal-link !text-amber-300 !border-amber-300">梦幻西游私服</a>正式开启，还原经典版本，无定制、无变态，纯复古体验，带你回到那个热血沸腾的年代！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 侧边新闻列表 -->
+                <div class="bg-white rounded-xl shadow-lg p-5">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="newspaper-title text-xl font-bold text-red-700 border-l-4 border-red-600 pl-3">最新资讯</h3>
+                        <span class="text-xs text-gray-500" id="news-date"></span>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3 group cursor-pointer">
+                            <span class="new-tag text-white text-xs px-2 py-0.5 rounded h-fit shrink-0 mt-0.5">新服</span>
+                            <div>
+                                <h4 class="text-sm font-medium group-hover:text-red-600 transition line-clamp-2">
+                                    <a href="#servers">「怀旧长安」新区今日14点火爆开启 首充翻倍送无级别</a>
+                                </h4>
+                                <p class="text-xs text-gray-400 mt-1">2小时前 · 阅读 12,847</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 group cursor-pointer">
+                            <span class="hot-tag text-white text-xs px-2 py-0.5 rounded h-fit shrink-0 mt-0.5">热门</span>
+                            <div>
+                                <h4 class="text-sm font-medium group-hover:text-red-600 transition line-clamp-2">
+                                    <a href="#strategy">梦幻西游SF新手入门攻略 三分钟快速上手不迷路</a>
+                                </h4>
+                                <p class="text-xs text-gray-400 mt-1">5小时前 · 阅读 8,923</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 group cursor-pointer">
+                            <span class="news-tag text-white text-xs px-2 py-0.5 rounded h-fit shrink-0 mt-0.5">公告</span>
+                            <div>
+                                <h4 class="text-sm font-medium group-hover:text-red-600 transition line-clamp-2">
+                                    <a href="#about">关于打击游戏外挂及违规行为的郑重声明</a>
+                                </h4>
+                                <p class="text-xs text-gray-400 mt-1">昨天 · 阅读 5,621</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 group cursor-pointer">
+                            <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded h-fit shrink-0 mt-0.5">攻略</span>
+                            <div>
+                                <h4 class="text-sm font-medium group-hover:text-red-600 transition line-clamp-2">
+                                    <a href="#strategy">各门派加点方案详解 打造你的专属角色</a>
+                                </h4>
+                                <p class="text-xs text-gray-400 mt-1">2天前 · 阅读 7,456</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 group cursor-pointer">
+                            <span class="bg-purple-600 text-white text-xs px-2 py-0.5 rounded h-fit shrink-0 mt-0.5">活动</span>
+                            <div>
+                                <h4 class="text-sm font-medium group-hover:text-red-600 transition line-clamp-2">
+                                    <a href="#servers">周末双倍经验活动开启 冲级最佳时机到来</a>
+                                </h4>
+                                <p class="text-xs text-gray-400 mt-1">3天前 · 阅读 9,102</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider my-8"></div>
+
+        <!-- 开服新闻区域 -->
+        <section id="news" class="mb-8">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="newspaper-title text-2xl md:text-3xl font-bold text-gray-800 flex items-center gap-3">
+                    <span class="w-1.5 h-8 bg-red-600 rounded-full"></span>
+                    开服资讯中心
+                </h2>
+                <a href="#servers" class="text-red-600 hover:text-red-700 text-sm font-medium">查看全部 →</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 新闻卡片1 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden article-card">
+                    <img src="https://gips1.baidu.com/it/u=2741119024,2151657417&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&wmo=5,5?w=1280&h=720" 
+                         alt="长安城新服开启" 
+                         class="w-full h-44 object-cover"
+                         loading="lazy">
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="new-tag text-white text-xs px-2 py-0.5 rounded">今日开服</span>
+                            <span class="text-xs text-gray-400">14:00 开启</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 transition cursor-pointer newspaper-title">
+                            「长安繁华」原版复古服务器今日震撼开启
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                            经典08版本完美复刻，原汁原味的<a href="/" class="internal-link">梦幻西游SF</a>体验，无商城、无会员、无定制，公平公正。长安城再现繁华景象，建邺城人潮涌动，熟悉的音乐响起，那一刻仿佛穿越回十年前那个夏天...
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center gap-3 text-gray-500">
+                                <span>👥 预计人气: 火爆</span>
+                            </div>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-1.5 rounded-full text-sm font-medium transition">
+                                立即进入
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 新闻卡片2 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden article-card">
+                    <img src="https://gips2.baidu.com/it/u=4150619638,287615784&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&wmo=5,5?w=1280&h=720" 
+                         alt="战斗画面" 
+                         class="w-full h-44 object-cover"
+                         loading="lazy">
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="hot-tag text-white text-xs px-2 py-0.5 rounded">热门推荐</span>
+                            <span class="text-xs text-gray-400">已开服 7 天</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 transition cursor-pointer newspaper-title">
+                            「决战华山」PK专属服务器 千人同屏大战
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                            专为PK爱好者打造的<a href="/" class="internal-link">梦幻私服</a>，平衡各门派属性，每周举办服战赛事，丰厚现金奖励等你来拿。大唐官府横扫千军，龙宫龙卷雨击，方寸山失心符，经典技能完美再现！
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center gap-3 text-gray-500">
+                                <span>👥 在线: 3,247人</span>
+                            </div>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-1.5 rounded-full text-sm font-medium transition">
+                                立即进入
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 新闻卡片3 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden article-card">
+                    <img src="https://gips0.baidu.com/it/u=364221394,503280374&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&wmo=5,5?w=1280&h=720" 
+                         alt="怀旧服务器" 
+                         class="w-full h-44 object-cover"
+                         loading="lazy">
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="bg-amber-600 text-white text-xs px-2 py-0.5 rounded">长久服</span>
+                            <span class="text-xs text-gray-400">稳定运营 1 年</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 hover:text-red-600 transition cursor-pointer newspaper-title">
+                            「岁月如歌」怀旧复古长久服 玩家数据永不删档
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                            运营一周年口碑服务器，上万玩家共同选择。定期更新内容，持续优化体验，从0级到175级，从师门任务到武神坛，完整游戏流程等你体验。真正的长久稳定，不跑路、不关服，让你安心畅玩。
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center gap-3 text-gray-500">
+                                <span>👥 在线: 5,892人</span>
+                            </div>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-1.5 rounded-full text-sm font-medium transition">
+                                立即进入
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="section-divider my-8"></div>
+
+        <!-- 服务器列表区域 -->
+        <section id="servers" class="mb-8">
+            <h2 class="newspaper-title text-2xl md:text-3xl font-bold text-gray-800 flex items-center gap-3 mb-6">
+                <span class="w-1.5 h-8 bg-red-600 rounded-full"></span>
+                热门服务器推荐
+            </h2>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gradient-to-r from-red-700 to-red-600 text-white">
+                            <tr>
+                                <th class="px-4 py-4 text-left text-sm font-semibold">服务器名称</th>
+                                <th class="px-4 py-4 text-center text-sm font-semibold hidden md:table-cell">版本类型</th>
+                                <th class="px-4 py-4 text-center text-sm font-semibold">开服时间</th>
+                                <th class="px-4 py-4 text-center text-sm font-semibold hidden md:table-cell">线路类型</th>
+                                <th class="px-4 py-4 text-center text-sm font-semibold">人气指数</th>
+                                <th class="px-4 py-4 text-center text-sm font-semibold">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="px-4 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <span class="hot-tag text-white text-xs px-2 py-0.5 rounded">火爆</span>
+                                        <span class="font-bold text-gray-800">长安繁华</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">08原版复古</td>
+                                <td class="px-4 py-4 text-center text-sm"><span class="new-tag text-white px-2 py-0.5 rounded text-xs">今日14点</span></td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">BGP多线</td>
+                                <td class="px-4 py-4 text-center">
+                                    <div class="flex items-center justify-center gap-1">
+                                        <span class="text-red-500">★★★★★</span>
+                                        <span class="text-xs text-gray-500 ml-1">爆满</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center">
+                                    <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                        进入游戏
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="px-4 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <span class="new-tag text-white text-xs px-2 py-0.5 rounded">新服</span>
+                                        <span class="font-bold text-gray-800">决战华山</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">PK平衡版</td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600">7天前</td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">电信/网通</td>
+                                <td class="px-4 py-4 text-center">
+                                    <div class="flex items-center justify-center gap-1">
+                                        <span class="text-red-500">★★★★☆</span>
+                                        <span class="text-xs text-gray-500 ml-1">热门</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center">
+                                    <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                        进入游戏
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="px-4 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <span class="bg-amber-600 text-white text-xs px-2 py-0.5 rounded">推荐</span>
+                                        <span class="font-bold text-gray-800">岁月如歌</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">怀旧长久服</td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600">1年前</td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">BGP多线</td>
+                                <td class="px-4 py-4 text-center">
+                                    <div class="flex items-center justify-center gap-1">
+                                        <span class="text-red-500">★★★★★</span>
+                                        <span class="text-xs text-gray-500 ml-1">稳定</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center">
+                                    <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                        进入游戏
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="px-4 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded">活动</span>
+                                        <span class="font-bold text-gray-800">梦回东海湾</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">唯美版</td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600">3天前</td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">双线</td>
+                                <td class="px-4 py-4 text-center">
+                                    <div class="flex items-center justify-center gap-1">
+                                        <span class="text-red-500">★★★★☆</span>
+                                        <span class="text-xs text-gray-500 ml-1">活跃</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center">
+                                    <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                        进入游戏
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="px-4 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <span class="bg-purple-600 text-white text-xs px-2 py-0.5 rounded">特色</span>
+                                        <span class="font-bold text-gray-800">大闹天宫</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">创新微变版</td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600">2周前</td>
+                                <td class="px-4 py-4 text-center text-sm text-gray-600 hidden md:table-cell">三线</td>
+                                <td class="px-4 py-4 text-center">
+                                    <div class="flex items-center justify-center gap-1">
+                                        <span class="text-red-500">★★★☆☆</span>
+                                        <span class="text-xs text-gray-500 ml-1">良好</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-center">
+                                    <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                        进入游戏
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider my-8"></div>
+
+        <!-- 游戏攻略区域 -->
+        <section id="strategy" class="mb-8">
+            <h2 class="newspaper-title text-2xl md:text-3xl font-bold text-gray-800 flex items-center gap-3 mb-6">
+                <span class="w-1.5 h-8 bg-red-600 rounded-full"></span>
+                游戏攻略专区
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- 图文攻略 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden article-card">
+                    <div class="md:flex">
+                        <div class="md:w-2/5">
+                            <img src="https://gips2.baidu.com/it/u=4150619638,287615784&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&wmo=5,5?w=1280&h=720" 
+                                 alt="新手攻略" 
+                                 class="w-full h-48 md:h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="p-5 md:w-3/5">
+                            <span class="bg-green-600 text-white text-xs px-2 py-0.5 rounded mb-3 inline-block">新手入门</span>
+                            <h3 class="font-bold text-xl mb-3 hover:text-red-600 transition cursor-pointer newspaper-title">
+                                梦幻西游SF新手完美开局指南
+                            </h3>
+                            <div class="text-gray-600 text-sm leading-relaxed space-y-2">
+                                <p><strong>第一步：职业选择</strong>——新手推荐大唐官府或龙宫，物理和法术输出都是日常任务的热门选择，容易组队。喜欢辅助可以选化生寺或普陀山。</p>
+                                <p><strong>第二步：升级路线</strong>——0-20级做主线任务，20-40级师门+抓鬼，40级后可以参加活动副本。<a href="/" class="internal-link">梦幻西游私服</a>通常有新手福利，升级速度很快。</p>
+                                <p><strong>第三步：装备获取</strong>——前期系统赠送的装备足够用，中期可以刷副本获取，也可以通过打造系统制作自己的极品装备。</p>
+                            </div>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-xs text-gray-400">发布时间：<span class="strategy-date"></span></span>
+                                <a href="#" class="text-red-600 hover:text-red-700 text-sm font-medium">阅读全文 →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 攻略列表 -->
+                <div class="bg-white rounded-xl shadow-lg p-5">
+                    <h3 class="font-bold text-lg mb-4 pb-3 border-b border-gray-100 flex items-center gap-2">
+                        <span class="w-1 h-5 bg-red-600 rounded"></span>
+                        热门攻略推荐
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4 group cursor-pointer">
+                            <span class="text-3xl font-black text-red-600/20 shrink-0">01</span>
+                            <div>
+                                <h4 class="font-medium group-hover:text-red-600 transition mb-1">
+                                    <a href="#">十二门派加点方案大全 各流派详细解析</a>
+                                </h4>
+                                <p class="text-xs text-gray-500">包含力敏大唐、魔龙宫、血耐方寸等经典加点方式</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 group cursor-pointer">
+                            <span class="text-3xl font-black text-red-600/20 shrink-0">02</span>
+                            <div>
+                                <h4 class="font-medium group-hover:text-red-600 transition mb-1">
+                                    <a href="#">赚钱攻略大全 教你日进斗金不是梦</a>
+                                </h4>
+                                <p class="text-xs text-gray-500">押镖、打图、跑商、炼妖，多种致富门路任你选</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 group cursor-pointer">
+                            <span class="text-3xl font-black text-red-600/20 shrink-0">03</span>
+                            <div>
+                                <h4 class="font-medium group-hover:text-red-600 transition mb-1">
+                                    <a href="#">召唤兽炼妖合宠技巧 翻页宠不是梦</a>
+                                </h4>
+                                <p class="text-xs text-gray-500">技能继承规律、资质成长提升技巧大公开</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 group cursor-pointer">
+                            <span class="text-3xl font-black text-red-600/20 shrink-0">04</span>
+                            <div>
+                                <h4 class="font-medium group-hover:text-red-600 transition mb-1">
+                                    <a href="#">副本任务全攻略 奖励拿到手软</a>
+                                </h4>
+                                <p class="text-xs text-gray-500">乌鸡国、水陆大会、车迟国等副本详细打法</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 group cursor-pointer">
+                            <span class="text-3xl font-black text-red-600/20 shrink-0">05</span>
+                            <div>
+                                <h4 class="font-medium group-hover:text-red-600 transition mb-1">
+                                    <a href="#">PK战术详解 比武大会制胜秘诀</a>
+                                </h4>
+                                <p class="text-xs text-gray-500">阵法选择、阵容搭配、特技使用一网打尽</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider my-8"></div>
+
+        <!-- 玩家评测区域 -->
+        <section id="reviews" class="mb-8">
+            <h2 class="newspaper-title text-2xl md:text-3xl font-bold text-gray-800 flex items-center gap-3 mb-6">
+                <span class="w-1.5 h-8 bg-red-600 rounded-full"></span>
+                玩家真实评测
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="bg-white rounded-xl shadow-md p-5 article-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg shrink-0">
+                            剑
+                        </div>
+                        <div>
+                            <h4 class="font-bold">剑侠客</h4>
+                            <div class="text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                        <span class="ml-auto text-xs text-gray-400">大唐官府</span>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        "玩过很多<a href="/" class="internal-link">梦幻西游SF</a>，这个是最稳定的！没有变态装备，没有会员碾压，大家公平起步，找回了当年和同学一起在网吧抓鬼的感觉。客服态度也很好，有问题马上解决，必须五星好评！"
+                    </p>
+                    <p class="text-xs text-gray-400 mt-3">发表于 3天前</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md p-5 article-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-lg shrink-0">
+                            骨
+                        </div>
+                        <div>
+                            <h4 class="font-bold">骨精灵</h4>
+                            <div class="text-amber-500 text-sm">★★★★★</div>
+                        </div>
+                        <span class="ml-auto text-xs text-gray-400">阴曹地府</span>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        "作为一个休闲玩家，最喜欢这里的氛围了。没有强制氪金，慢慢玩也能跟上大部队，认识了很多朋友，每天一起做任务、聊天，就像一个大家庭。<a href="/" class="internal-link">梦幻私服</a>里难得的一股清流！"
+                    </p>
+                    <p class="text-xs text-gray-400 mt-3">发表于 1周前</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md p-5 article-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-lg shrink-0">
+                            龙
+                        </div>
+                        <div>
+                            <h4 class="font-bold">龙太子</h4>
+                            <div class="text-amber-500 text-sm">★★★★☆</div>
+                        </div>
+                        <span class="ml-auto text-xs text-gray-400">龙宫</span>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        "开服就来了，玩了快半年了，确实是长久服！版本更新及时，活动也多，每周都有新内容。PK平衡做得不错，不会出现某个门派一家独大的情况，龙宫秒起来还是那么爽！"
+                    </p>
+                    <p class="text-xs text-gray-400 mt-3">发表于 2周前</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider my-8"></div>
+
+        <!-- 关于我们区域 -->
+        <section id="about" class="mb-8">
+            <div class="bg-gradient-to-r from-red-50 to-amber-50 rounded-xl p-6 md:p-8 border border-red-100">
+                <h2 class="newspaper-title text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">为什么选择我们？</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">安全稳定</h3>
+                        <p class="text-gray-600 text-sm">BGP多线机房，专业防护，99.9%在线率，玩家数据多重备份永不丢失</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">长久运营</h3>
+                        <p class="text-gray-600 text-sm">承诺不关服、不跑路、不割韭菜，定期更新内容，打造真正的长久服</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">公平公正</h3>
+                        <p class="text-gray-600 text-sm">无会员、无定制、无变态装备，所有玩家同一起跑线，纯技术决定实力</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">7×24客服</h3>
+                        <p class="text-gray-600 text-sm">专业客服团队全天候在线，问题秒回，BUG第一时间修复处理</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gradient-to-b from-gray-800 to-gray-900 text-gray-300 py-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="newspaper-title text-2xl font-bold text-white mb-4">梦幻西游原版私服</h3>
+                    <p class="text-sm leading-relaxed mb-4">
+                        专业的<a href="/" class="text-amber-400 hover:text-amber-300 font-semibold">梦幻西游私服</a>发布平台，致力于为广大玩家提供海量优质的<a href="/" class="text-amber-400 hover:text-amber-300 font-semibold">梦幻西游SF</a>资源。我们严格筛选每一个服务器，确保玩家能玩到长久稳定、公平公正的<a href="/" class="text-amber-400 hover:text-amber-300 font-semibold">梦幻私服</a>。
+                    </p>
+                    <p class="text-sm leading-relaxed">
+                        无论是怀旧复古的经典版本，还是创新有趣的特色版本，在这里你都能找到。加入我们，和千万玩家一起重温那段难忘的西游之旅！
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">快速导航</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-amber-400 transition">网站首页</a></li>
+                        <li><a href="#news" class="hover:text-amber-400 transition">开服资讯</a></li>
+                        <li><a href="#servers" class="hover:text-amber-400 transition">服务器列表</a></li>
+                        <li><a href="#strategy" class="hover:text-amber-400 transition">游戏攻略</a></li>
+                        <li><a href="#reviews" class="hover:text-amber-400 transition">玩家评测</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">热门关键词</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="/" class="bg-gray-700 hover:bg-red-600 px-3 py-1 rounded-full text-sm transition">梦幻西游私服</a>
+                        <a href="/" class="bg-gray-700 hover:bg-red-600 px-3 py-1 rounded-full text-sm transition">梦幻西游SF</a>
+                        <a href="/" class="bg-gray-700 hover:bg-red-600 px-3 py-1 rounded-full text-sm transition">梦幻私服</a>
+                        <a href="/" class="bg-gray-700 hover:bg-red-600 px-3 py-1 rounded-full text-sm transition">梦幻SF</a>
+                        <a href="/" class="bg-gray-700 hover:bg-red-600 px-3 py-1 rounded-full text-sm transition">怀旧西游</a>
+                        <a href="/" class="bg-gray-700 hover:bg-red-600 px-3 py-1 rounded-full text-sm transition">复古长久服</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-gray-500" id="footer-copyright"></p>
+                    <p class="text-xs text-gray-500">
+                        本游戏适合18岁以上玩家娱乐 · 请合理安排游戏时间 · 抵制不良游戏 · 拒绝盗版游戏
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 统计代码 -->
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>LA.init({id:"KV2bPUwVeR3jCIFM",ck:"KV2bPUwVeR3jCIFM"})</script>
+    
+    <!-- 百度推送代码 -->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <!-- 日期时间脚本 -->
+    <script>
+    function updateDateTime() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        const weekDays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        const weekDay = weekDays[now.getDay()];
+
+        const timeStr = `${year}年${month}月${day}日 ${weekDay} ${hours}:${minutes}:${seconds}`;
+        const dateStr = `${year}-${month}-${day}`;
+        const fullDateStr = `${year}年${month}月${day}日`;
+
+        const timeEl = document.getElementById('current-time');
+        if (timeEl) timeEl.textContent = timeStr;
+
+        const newsDateEl = document.getElementById('news-date');
+        if (newsDateEl) newsDateEl.textContent = dateStr;
+
+        const copyrightEl = document.getElementById('footer-copyright');
+        if (copyrightEl) copyrightEl.textContent = `© ${year} 梦幻西游原版私服发布站 版权所有`;
+
+        document.querySelectorAll('.strategy-date').forEach(el => {
+            el.textContent = fullDateStr;
+        });
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>
